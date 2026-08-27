@@ -15,6 +15,8 @@ dependencies = [
     "torch>=2.0",
     "torchaudio>=2.0",
     "speechbrain>=1.0",
+    "librosa>=1.0.0",
+    "noisereduce>=3.0.3",
 ]
 
 [build-system]

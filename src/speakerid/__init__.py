@@ -16,6 +16,8 @@ from ._version import (
 )
 
 from .recording import record
+from .phrases import get_phrases, set_phrases
+from .audio import clean
 
 __all__ = [
     "__title__",
@@ -29,6 +31,9 @@ __all__ = [
     "__copyright__",
     "__banana__",
     "record",
+    "set_phrases",
+    "get_phrases",
+    "clean",
 ]
 
 
