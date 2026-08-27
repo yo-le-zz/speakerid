@@ -18,6 +18,12 @@ from ._version import (
 from .recording import record
 from .phrases import get_phrases, set_phrases
 from .audio import clean
+from .augmentation import augment
+from .encoding import encode
+from .recognition import compare, identify, verify
+from .profile import VoiceProfile
+from .enrollment import enroll
+from .persistence import load, save
 
 __all__ = [
     "__title__",
@@ -34,6 +40,15 @@ __all__ = [
     "set_phrases",
     "get_phrases",
     "clean",
+    "augment",
+    "encode",
+    "compare",
+    "verify",
+    "identify",
+    "augment_audio",
+    "clean_audio",
+    "save",
+    "load",
 ]
 
 
