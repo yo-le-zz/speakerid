@@ -57,7 +57,6 @@ from speakerid import record
 record(
     output="voice.wav",
     duration=5,
-    phrase="Bonjour, je m'appelle Yolezz.",
 )
 ```
 

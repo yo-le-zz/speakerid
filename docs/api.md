@@ -5,6 +5,8 @@ This document contains the complete public API of SpeakerID.
 ## record
 
 Records audio from a microphone.
+`record()` does not display phrases or interact with a user interface.
+The application using SpeakerID is responsible for displaying any phrase to the user.
 
 ### Arguments
 
@@ -13,12 +15,15 @@ Records audio from a microphone.
 - `sample_rate` → audio sample rate
 - `channels` → number of audio channels
 - `device` → microphone to use
-- `phrase` → optional phrase displayed before recording
 
 ### Example
 
 ```python
-from speakerid import record
+from speakerid import get_phrases, record
+
+phrase = get_phrases("fr")[0]
+
+print(f"🎤 Please say: {phrase}")
 
 record(
     output="voice.wav",
@@ -26,7 +31,6 @@ record(
     sample_rate=16000,
     channels=1,
     device=None,
-    phrase=None,
 )
 ```
 
