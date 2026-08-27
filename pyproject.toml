@@ -1,0 +1,22 @@
+[project]
+name = "speakerid"
+version = "0.1.0"
+description = "Python library for speaker recognition."
+readme = "README.md"
+authors = [
+    { name = "yo-le-zz", email = "yolezz.secret@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.0",
+    "scipy>=1.14",
+    "sounddevice>=0.5",
+    "soundfile>=0.12",
+    "torch>=2.0",
+    "torchaudio>=2.0",
+    "speechbrain>=1.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.21,<0.12.0"]
+build-backend = "uv_build"
